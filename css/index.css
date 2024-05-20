@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #000
+    url("https://static.vecteezy.com/ti/vetor-gratis/p1/23711422-plano-minimalista-projeto-panorama-do-uma-montanha-panorama-facil-para-mudanca-cores-vetor.jpg")
+    no-repeat top center;
+  background-size: cover;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+  color: #fff;
+}
+
+nav {
+  transform: translate(17%, 50%);
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav_list li {
+  padding: 20px;
+}
+
+.nav_list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background: rgb(19, 121, 255);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* Body Page; */
+
+main .content {
+  display: block;
+  margin: 100px auto 0 auto;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+}
